@@ -1,0 +1,22 @@
+/* GENERAL */
+a, a:visited { color: #428BCA; text-decoration: none; }
+.container { width: 800px; margin: 0 auto; }
+
+/** TOOLS **/
+.tools select, .tools button, #filterString { padding: 5px; }
+#filterString { width: 400px; }
+
+/** CONTENT **/
+.idea { min-height: 100px; border-bottom: thin #D8D8D8 solid; padding: 15px 0; } 
+.left { float: left; width: 30px; padding: 0px 25px; margin: 0 auto; }
+.voteUp { margin: 0 auto; width: 30px; }
+.votes { font-size: 25px; text-align: center; }
+
+/** FORM **/
+#addComment { margin: 20px; }
+textarea { width: 780px; margin: 10px 0; }
+
+
+/** PAGINATION **/
+.pagination { margin: 30px 0; }
+.pagination a { padding: 5px 10px; background: #E8E8E8; border: 1px solid #D8D8D8; }

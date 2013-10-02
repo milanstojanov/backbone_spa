@@ -1,0 +1,41 @@
+<div class="pagination">
+
+    <span class="cell last pages">
+        <% if (currentPage != 1) { %>
+            <a href="#" class="first">First</a>
+            <a href="#" class="prev">Previous</a>
+        <% } %>
+        <% _.each (pageSet, function (p) { %>
+            <% if (currentPage == p) { %>
+                <span class="page selected"><%= p %></span>
+            <% } else { %>
+                <a href="#" class="page"><%= p %></a>
+            <% } %>
+        <% }); %>
+        <% if (lastPage != currentPage && lastPage != 0) { %>
+            <a href="#" class="next">Next</a>
+            <a href="#" class="last">Last</a>
+        <% } %>
+    </span>
+
+    <span class="divider">/</span>
+
+    <span class="cell howmany">Show
+        <a href="#" class="selected">3</a>   
+        <a href="#" class="">9</a>
+        <a href="#" class="">12</a>
+    </span>
+
+    <span class="divider">/</span>
+
+    <span class="cell first records">
+    <span class="current"><%= startRecord %></span>
+    -
+    <span class="perpage"><%= endRecord %></span>
+    of
+    <span class="total"><%= totalRecords %></span>
+    shown
+    </span>
+
+    <span class="divider">/</span>
+</div>
